@@ -9,7 +9,9 @@ curry with es6 rest is much easier.
 npm i --save curry-es6
 ```
 ## Usage
-```
+```js
+import { curry, __ } from 'curry-es6';
+
 const add3 = (a, b, c) => a + b + c;
 const curryAdd3 = curry(add3);
 curryAdd3(__, 2)(__, 3)()(__)(1);
