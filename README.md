@@ -1,6 +1,9 @@
 # Curry-ES6
 curry with es6 rest is much easier.
 
+[![npm version](https://badge.fury.io/js/curry-es6.png)](https://badge.fury.io/js/curry-es6)
+[![build status](https://travis-ci.org/jasonHzq/curry-es6.svg)](https://travis-ci.org/jasonHzq/curry-es6)
+
 ## install
 ```
 npm i --save curry-es6
