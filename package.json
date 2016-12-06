@@ -1,6 +1,6 @@
 {
   "name": "curry-es6",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "curry es6",
   "main": "lib/index.js",
   "files": [
