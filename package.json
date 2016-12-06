@@ -2,14 +2,15 @@
   "name": "curry-es6",
   "version": "0.0.1",
   "description": "curry es6",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "files": [
-    "src"
+    "lib"
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers js:babel-register --recursive test",
-    "watch": "NODE_ENV=production ./node_modules/.bin/webpack -w",
-    "build": "NODE_ENV=production ./node_modules/.bin/webpack"
+    "watch": "babel src --out-dir lib -w",
+    "build": "babel src --out-dir lib",
+    "preinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
   },
   "homepage": "https://github.com/jasonHzq/curry-es6#readme",
   "devDependencies": {
+    "babel-cli": "^6.18.0",
     "babel-core": "^6.4.5",
     "babel-eslint": "^5.0.0-beta6",
     "babel-loader": "^6.2.1",
@@ -47,7 +49,6 @@
     "chai": "^3.4.1",
     "eslint": "^1.10.3",
     "eslint-config-airbnb": "^3.1.0",
-    "mocha": "^2.3.4",
-    "webpack": "^1.12.11"
+    "mocha": "^2.3.4"
   }
 }
